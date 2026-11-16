@@ -3,7 +3,10 @@ console.log("Script cargado correctamente, proceda");
 const boton = document.getElementById('boton');
 const mensaje = document.getElementById('mensaje');
 
-boton.addEventListener('click', () => {
-    mensaje.textContent = '¡JavaScript está funcionando!';
-});
+if (boton && mensaje) {
+  boton.addEventListener('click', () => {
+    mensaje.textContent = 'JavaScript funciona!';
+    console.log("Botón clickeado");
+  });
+}
 
